@@ -5,10 +5,14 @@ jobs:
     Imprimir-test:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/setup-java@v5.1.0
+        - name: Checkout repository 
+          uses: actions/checkout@v4
+        - run: ls -ltr
+        - name: Setup java
+          uses: actions/setup-java@v5.1.0
           with:
             distribution: 'temurin' # See 'Supported distributions' for available options
             java-version: '19'
-        - run: java HelloWorldApp.java
+        - run: java codigo/HelloWorldApp.java
         - run: echo "Hello world"
         
