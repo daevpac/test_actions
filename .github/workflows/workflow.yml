@@ -3,6 +3,7 @@ name: Test Actions
 on: [push]
 jobs:
     Imprimir-test:
+        runs-on: ubuntu-latest
         steps:
             name: Hello world
     
