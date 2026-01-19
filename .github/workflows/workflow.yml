@@ -13,6 +13,6 @@ jobs:
           with:
             distribution: 'temurin' # See 'Supported distributions' for available options
             java-version: '19'
-        - run: java codigo/HelloWorldApp.java
+        - run: java Codigo/HelloWorldApp.java
         - run: echo "Hello world"
         
