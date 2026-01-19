@@ -18,7 +18,7 @@ jobs:
           run: javac Codigo/HelloWorldApp.java
         - run: ls -ltr Codigo
         - name: Run App
-          run: java Codigo/HelloWorldApp
+          run: java -cp Codigo/HelloWorldApp
           
         - run: echo "Test finished"
         
