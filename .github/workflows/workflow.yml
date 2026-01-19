@@ -12,7 +12,12 @@ jobs:
           uses: actions/setup-java@v5.1.0
           with:
             distribution: 'temurin' # See 'Supported distributions' for available options
-            java-version: '19'
-        - run: java Codigo/HelloWorldApp.java
-        - run: echo "Hello world"
+            java-version: '17'
+            
+        - name: Build App
+          run: javac Codigo/HelloWorldApp.java
+        - name: Run App
+          run: java Codigo/HelloWorldApp
+          
+        - run: echo "Test finished"
         
