@@ -16,8 +16,8 @@ jobs:
           with:
             distribution: 'temurin' # See 'Supported distributions' for available options
             java-version: '17'
-        - name: Print Java version
-          run: java -v
+        - name: Show Java version 
+          run: java -version
         - name: Build App
           run: javac Codigo/HelloWorldApp.java
         - run: ls -ltr Codigo
